@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('noButton').addEventListener('mouseover', function() {
-    document.getElementById('changingImage').src = 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXZ5c3VmNnNha2t3dzY1b2Eyd2NxZmVza2ZkbWxodzlxZW9rdWE0dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/8AoEtk2orOyNk0ZzVq/giphy.gif'; 
+    setTimeout(function() {
+      document.getElementById('changingImage').src = 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXZ5c3VmNnNha2t3dzY1b2Eyd2NxZmVza2ZkbWxodzlxZW9rdWE0dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/8AoEtk2orOyNk0ZzVq/giphy.gif';
+    }, 2000); // Delay of 2000 milliseconds
     moveButton();
   });
   
   document.getElementById('noButton').addEventListener('mouseout', function() {
-    document.getElementById('changingImage').src = 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDZkNzR4dHI3d3BlZ2lja3NtNHkxbmxoMDFsbmF4OXl1ZW9nb255OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RzymBjbmsSHM3a6rot/giphy.gif';
+    setTimeout(function() {
+      document.getElementById('changingImage').src = 'https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDZkNzR4dHI3d3BlZ2lja3NtNHkxbmxoMDFsbmF4OXl1ZW9nb255OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RzymBjbmsSHM3a6rot/giphy.gif';
+    }, 2000); // Delay of 2000 milliseconds
   });
 
   function moveButton() {
